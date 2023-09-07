@@ -66,9 +66,11 @@ loader.load(
   function (gltf) {
     scene.add(gltf.scene);
   },
-  undefined,
-  function (error) {
-    console.error(error);
+  (xhr) => {
+    console.log((xhr.loaded / xhr.total) * 100 + '% model loaded');
+  },
+  (error) => {
+    console.error('Error model loaded', error);
   }
 );
 
