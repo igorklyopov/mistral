@@ -9,7 +9,7 @@ import rocketModel from '../src/assets/3d-models/mistral_rocket.glb';
  * Base
  */
 // Canvas
-const canvas = document.querySelector('canvas.webgl');
+const canvasRef = document.getElementById('canvas_webgl');
 
 // Scene
 const scene = new THREE.Scene();
@@ -52,7 +52,7 @@ camera.position.z = 1;
 scene.add(camera);
 
 // Controls
-const controls = new OrbitControls(camera, canvas);
+const controls = new OrbitControls(camera, canvasRef);
 controls.enableDamping = true;
 
 /**
@@ -91,7 +91,7 @@ scene.add(directionLightHelper);
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
-  canvas: canvas,
+  canvas: canvasRef,
   antialias: true,
 });
 renderer.setSize(sizes.width, sizes.height);
