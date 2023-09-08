@@ -2,8 +2,10 @@ import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
-import rocketModel from '../src/assets/3d-models/mistral_rocket.glb';
+// import rocketModel from '../src/assets/models/mistral_rocket.glb';
+import rocketModel from '../public/assets/models/mistral_rocket_compressed.glb';
 
 /**
  * Base
@@ -60,6 +62,10 @@ controls.enableDamping = true;
  */
 
 const loader = new GLTFLoader();
+const dracoLoader = new DRACOLoader();
+dracoLoader.setDecoderConfig({ type: 'js' });
+dracoLoader.setDecoderPath('/js/libs/draco/');
+loader.setDRACOLoader(dracoLoader);
 
 loader.load(
   rocketModel,
@@ -70,7 +76,7 @@ loader.load(
     console.log((xhr.loaded / xhr.total) * 100 + '% model loaded');
   },
   (error) => {
-    console.error('Error model loaded', error);
+    console.error('Error model loaded: ', error.message);
   }
 );
 
