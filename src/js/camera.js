@@ -17,9 +17,9 @@ const camera = new THREE.PerspectiveCamera(
   cameraParams.near,
   cameraParams.far
 );
-camera.position.x = 1;
-camera.position.y = 1;
-camera.position.z = 1;
+camera.position.x = 0;
+camera.position.y = 0;
+camera.position.z = 1.2;
 scene.add(camera);
 
 

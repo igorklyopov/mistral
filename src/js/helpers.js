@@ -7,6 +7,8 @@ import { camera } from './camera.js';
 
 const gui = new GUI();
 
+scene.add(new THREE.AxesHelper(5));
+
 // for lights
 
 const ambientLightParams = {
