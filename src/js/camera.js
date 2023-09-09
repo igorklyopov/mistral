@@ -7,11 +7,15 @@ import { scene } from './scene.js';
  * Camera
  */
 // Base camera
+const cameraParams = {
+   fov : 75, aspect : sizes.width / sizes.height, near : 0.1, far : 100 
+}
+
 const camera = new THREE.PerspectiveCamera(
-  75,
-  sizes.width / sizes.height,
-  0.1,
-  100
+  cameraParams.fov,
+  cameraParams.aspect,
+  cameraParams.near,
+  cameraParams.far
 );
 camera.position.x = 1;
 camera.position.y = 1;
