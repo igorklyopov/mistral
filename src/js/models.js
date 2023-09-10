@@ -26,18 +26,18 @@ const rocket = loader.load(
     // helpers
     // console.log(gltf.scene);
 
-    const rocketFolder = gui.addFolder('Rocket');
-    rocketFolder.add(gltf.scene.position, 'x', -10, 10);
-    rocketFolder.add(gltf.scene.position, 'y', -10, 10);
-    rocketFolder.add(gltf.scene.position, 'z', -10, 10);
+    // const rocketFolder = gui.addFolder('Rocket');
+    // rocketFolder.add(gltf.scene.position, 'x', -10, 10);
+    // rocketFolder.add(gltf.scene.position, 'y', -10, 10);
+    // rocketFolder.add(gltf.scene.position, 'z', -10, 10);
 
-    rocketFolder.add(gltf.scene.rotation, 'x', 0, 360).name('rotation x');
-    rocketFolder.add(gltf.scene.rotation, 'y', 0, 360).name('rotation y');
-    rocketFolder.add(gltf.scene.rotation, 'z', 0, 360).name('rotation z');
+    // rocketFolder.add(gltf.scene.rotation, 'x', 0, 360).name('rotation x');
+    // rocketFolder.add(gltf.scene.rotation, 'y', 0, 360).name('rotation y');
+    // rocketFolder.add(gltf.scene.rotation, 'z', 0, 360).name('rotation z');
 
-    rocketFolder.add(gltf.scene.scale, 'x', 0, 10).name('scale x');
-    rocketFolder.add(gltf.scene.scale, 'y', 0, 10).name('scale y');
-    rocketFolder.add(gltf.scene.scale, 'z', 0, 10).name('scale z');
+    // rocketFolder.add(gltf.scene.scale, 'x', 0, 10).name('scale x');
+    // rocketFolder.add(gltf.scene.scale, 'y', 0, 10).name('scale y');
+    // rocketFolder.add(gltf.scene.scale, 'z', 0, 10).name('scale z');
     //
     gltf.scene.traverse(function (child) {
       if (child.isMesh) {
