@@ -6,8 +6,8 @@ import { GUI } from 'dat.gui'; // helpers
 
 import { scene } from '../js/scene.js';
 
-import rocketModel from '../../public/assets/models/mistral_rocket_compressed.glb';
-import launcherRocketModel from '../../public/assets/models/mistral_launcher_rocket_static.glb';
+import rocketModel from '../../public/assets/models/mistral_rocket.glb';
+import launcherRocketModel from '../../public/assets/models/mistral_launcher_rocket.glb';
 
 /**
  * Model
