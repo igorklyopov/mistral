@@ -4,8 +4,6 @@ import { camera } from './js/camera';
 import { sizes } from './js/sizes.js';
 import { renderer } from './js/renderer.js';
 import { tick } from './js/animate.js';
-import { rocket } from './js/models.js';
-import helpers from './js/helpers';
 
 window.addEventListener('resize', () => {
   // Update sizes

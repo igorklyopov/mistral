@@ -8,6 +8,7 @@ import { scene } from '../js/scene.js';
 
 import rocketModel from '../../public/assets/models/mistral_rocket.glb';
 import launcherRocketModel from '../../public/assets/models/mistral_launcher_rocket.glb';
+import mistralComplex from '../../public/assets/models/mistral_complex.glb';
 
 /**
  * Model
@@ -21,7 +22,7 @@ dracoLoader.setDecoderPath('/js/libs/draco/');
 loader.setDRACOLoader(dracoLoader);
 
 const rocket = loader.load(
-  launcherRocketModel,
+  mistralComplex,
   function (gltf) {
     // helpers
     // console.log(gltf.scene);
