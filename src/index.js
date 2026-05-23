@@ -1,6 +1,8 @@
 import './style.css';
 
 import { camera } from './js/camera';
+import './js/lights.js';
+import './js/models.js';
 import { sizes } from './js/sizes.js';
 import { renderer } from './js/renderer.js';
 import { tick } from './js/animate.js';

@@ -10,6 +10,4 @@ orbitControls.minDistance = 1.3;
 orbitControls.maxDistance = 5;
 orbitControls.enablePan = false;
 
-console.log(orbitControls);
-
 export { orbitControls };
